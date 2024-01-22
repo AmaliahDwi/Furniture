@@ -1,8 +1,10 @@
-import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
+import { FaCaretDown, FaCaretUp } from "react-icons/fa6";
 
 function InsideNavbar({ fixed = true, scrolled }: any) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <div
@@ -43,22 +45,29 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                 </a>
               </div>
             </div>
+            <div className="relative flex flex-col items-center rounded-lg">
+              <button
+                onClick={() => setIsOpen((prev) => !prev)}
+                className="flex items-center justify-between tracking-normal text-lg rounded-lg active:text-amber-600 text-white"
+              >
+                ABOUT US
+                <span className="ml-4">
+                  {!isOpen ? <FaCaretDown /> : <FaCaretUp />}
+                </span>
+              </button>
+            </div>
           </div>
-          <form className="px-14 py-3 items-center">
+          <form className="px-2 py-3">
             <div className="relative">
               <input
                 type="search"
                 id="search-box"
                 placeholder="Search..."
-                className="px-10 py-1 rounded-full text-base"
+                className="py-2 pl-4 rounded-full text-base focus:outline-none"
               />
               <button className="absolute right-1 top-1/2 -translate-y-1/2 p-4 rounded-full">
                 <IoIosSearch />
               </button>
-
-              <label htmlFor="search-box">
-                <i data-feather="search"></i>
-              </label>
             </div>
           </form>
         </div>

@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Searchbar from "./Searchbar";
 
 function Layout({ children, title, fullscreen = false }: any) {
   return (
@@ -14,9 +13,7 @@ function Layout({ children, title, fullscreen = false }: any) {
         <div>
           <Navbar />
         </div>
-        <div>
-          <Searchbar />
-        </div>
+
         <div className="">{children}</div>
         <Footer fullscreen={fullscreen} />
       </div>

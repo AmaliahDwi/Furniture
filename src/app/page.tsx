@@ -7,7 +7,7 @@ export default function Home() {
       <Layout>
         <section
           id="home"
-          className="flex justify-between border-b-[5px] border-cyan-950 hue-rotate-180 border-spacing-5"
+          className="flex justify-between border-b-[5px] border-transparent hue-rotate-180 border-spacing-5"
         >
           <div className="flex-row px-28 py-20 space-y-10 bg-white">
             <div className="sm:text-4xl lg:text-6xl sm:pt-24  lg:pt-28">
@@ -36,7 +36,7 @@ export default function Home() {
 
         <section
           id="chair"
-          className="flex justify-between border-b-[5px] border-cyan-950 mx-auto"
+          className="flex justify-between border-b-[5px]  border-transparent mx-auto"
         >
           <Image
             src={"/gambar/c2.jpg"}
@@ -62,7 +62,7 @@ export default function Home() {
 
         <section
           id="lamp"
-          className="flex justify-between h-svh border-b-[5px] border-cyan-950 mx-auto"
+          className="flex justify-between h-svh border-b-[5px] border-transparent mx-auto"
         >
           <div className="flex-row px-28 space-y-10 bg-white">
             <div className="sm:text-4xl lg:text-6xl pt-48">
@@ -89,7 +89,7 @@ export default function Home() {
 
         <section
           id="table"
-          className="flex justify-between h-svh border-b-[5px] border-cyan-950"
+          className="flex justify-between h-svh border-b-[5px] border-transparent"
         >
           <div>
             <Image
