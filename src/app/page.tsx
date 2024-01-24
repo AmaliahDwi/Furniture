@@ -1,10 +1,69 @@
 import Image from "next/image";
 import Layout from "./components/Layout";
+import { Carousel } from "flowbite-react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Home() {
+  const carouselProps: any = {
+    showArrows: true,
+    autoPlay: true,
+    interval: 3000,
+  };
   return (
-    <main>
+    <main className="bg-white">
       <Layout>
+        <div className="grid grid-cols-3 h-80 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel
+            {...carouselProps}
+            dynamicHeight={false}
+            emulateTouch={true}
+          >
+            {[1, 2, 3].map((index) => (
+              <div key={index}>
+                <Image
+                  src={`/gambar/iklan ${index}.png`}
+                  width={600}
+                  height={300}
+                  alt={`iklan ${index}`}
+                />
+              </div>
+            ))}
+          </Carousel>
+
+          <Carousel
+            {...carouselProps}
+            dynamicHeight={false}
+            emulateTouch={true}
+          >
+            {[1, 2, 3].map((index) => (
+              <div key={index}>
+                <Image
+                  src={`/gambar/iklan ${index}.png`}
+                  width={600}
+                  height={300}
+                  alt={`iklan ${index}`}
+                />
+              </div>
+            ))}
+          </Carousel>
+
+          <Carousel
+            {...carouselProps}
+            dynamicHeight={false}
+            emulateTouch={true}
+          >
+            {[1, 2, 3].map((index) => (
+              <div key={index}>
+                <Image
+                  src={`/gambar/iklan ${index}.png`}
+                  width={600}
+                  height={300}
+                  alt={`iklan ${index}`}
+                />
+              </div>
+            ))}
+          </Carousel>
+        </div>
         <section
           id="home"
           className="flex justify-between border-b-[5px] border-transparent hue-rotate-180 border-spacing-5"
@@ -23,8 +82,6 @@ export default function Home() {
             <div className="ring-1 ring-slate-950 rounded-full w-32 text-center py-2 hover:text-cyan-950">
               <button>Shop Now</button>
             </div>
-          </div>
-          <div>
             <Image
               src={"/gambar/living1.jpg"}
               width={600}
@@ -142,6 +199,37 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <table className="table-auto">
+          <thead>
+            <tr>
+              <th>
+                <Image
+                  src={"/gambar/iklan 1.png"}
+                  width={600}
+                  height={300}
+                  alt="iklan"
+                ></Image>
+              </th>
+              <th>
+                <Image
+                  src={"/gambar/iklan2.png"}
+                  width={600}
+                  height={300}
+                  alt="iklan"
+                ></Image>
+              </th>
+              <th>
+                <Image
+                  src={"/gambar/iklan 3.png"}
+                  width={600}
+                  height={300}
+                  alt="iklan"
+                ></Image>
+              </th>
+            </tr>
+          </thead>
+        </table>
 
         {/* Hero  */}
       </Layout>
