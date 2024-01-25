@@ -15,7 +15,7 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
             : ""
         } ${
           fixed ? (scrolled ? "shadow -top-4" : "shadow-none  -top-6") : ""
-        } w-full bg-cyan-950`}
+        } w-full bg-[#875A38]`}
       >
         <div
           className={`flex justify-between py-[5px] items-center ${
@@ -25,14 +25,13 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
           <div className="flex gap-12 sm:gap-10 items-center">
             <div className="font-extrabold text-6xl text-gray-100">Abani</div>
             <div className="hidden md:block">
-              <div className="flex text-md md:text-lg sm:gap-16 lg:gap-16 sm:px-10 lg:px-20">
+              <div className="flex text-md md:text-lg sm:gap-10 lg:gap-10 sm:px-5 lg:px-10">
                 <a href="#home" className="text-white hover:text-orange-300">
                   HOME
                 </a>
-                <a
-                  href="#chair"
-                  className="text-white hover:text-orange-300"
-                ></a>
+                <a href="#chair" className="text-white hover:text-orange-300">
+                  CHAIR
+                </a>
                 <a href="#lamp" className="text-white hover:text-orange-300">
                   LAMP
                 </a>
@@ -57,22 +56,22 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                     </span>
                   </button>
                   {isOpen && (
-                    <div className="bg-cyan-950 w-[120px] absolute text-md md:text-lg text-gray-100 top-10  p-2">
+                    <div className="bg-[#875A38] w-[120px] absolute text-md md:text-lg text-gray-100 top-10  p-2">
                       <div className="">
                         <Link
-                          className="flex flex-row hover:bg-cyan-700 cursor-pointer p-1"
+                          className="flex flex-row hover:bg-[#CE9970] cursor-pointer p-1"
                           href="#"
                         >
                           AKSESORIS
                         </Link>
                         <Link
-                          className="flex flex-row hover:bg-cyan-700 cursor-pointe p-1"
+                          className="flex flex-row hover:bg-[#CE9970] cursor-pointe p-1"
                           href="#"
                         >
                           DESAIN INTERIOR
                         </Link>
                         <Link
-                          className="flex flex-row hover:bg-cyan-700 cursor-pointer p-1"
+                          className="flex flex-row hover:bg-[#CE9970] cursor-pointer p-1"
                           href="#"
                         >
                           PROPERTI
@@ -90,7 +89,7 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                 type="search"
                 id="search-box"
                 placeholder="Search..."
-                className="py-2 pl-4 rounded-full text-base focus:outline-none"
+                className="py-2 pl-32 rounded-full text-base focus:outline-none"
               />
               <button className="absolute right-1 top-1/2 -translate-y-1/2 p-4 rounded-full">
                 <IoIosSearch />

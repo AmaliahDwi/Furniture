@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <main className="bg-white">
       <Layout>
-        <div className="grid grid-cols-3 h-80 sm:h-64 xl:h-80 2xl:h-96">
+        {/* <div className="h-96 justify-">
           <Carousel
             {...carouselProps}
             dynamicHeight={false}
             emulateTouch={true}
           >
             {[1, 2, 3].map((index) => (
-              <div key={index}>
+              <div key={index} className="cen">
                 <Image
                   src={`/gambar/iklan ${index}.png`}
                   width={600}
@@ -29,44 +29,32 @@ export default function Home() {
               </div>
             ))}
           </Carousel>
-
-          <Carousel
-            {...carouselProps}
-            dynamicHeight={false}
-            emulateTouch={true}
-          >
-            {[1, 2, 3].map((index) => (
-              <div key={index}>
-                <Image
-                  src={`/gambar/iklan ${index}.png`}
-                  width={600}
-                  height={300}
-                  alt={`iklan ${index}`}
-                />
-              </div>
-            ))}
-          </Carousel>
-
-          <Carousel
-            {...carouselProps}
-            dynamicHeight={false}
-            emulateTouch={true}
-          >
-            {[1, 2, 3].map((index) => (
-              <div key={index}>
-                <Image
-                  src={`/gambar/iklan ${index}.png`}
-                  width={600}
-                  height={300}
-                  alt={`iklan ${index}`}
-                />
-              </div>
-            ))}
+        </div> */}
+        <div className="h-80 ">
+          <Carousel>
+            <Image
+              src="/gambar/iklan 1.png"
+              width={600}
+              height={800}
+              alt="iklan1"
+            />
+            <Image
+              src="/gambar/iklan 2.png"
+              width={600}
+              height={800}
+              alt="iklan2"
+            />
+            <Image
+              src="/gambar/iklan 3.png"
+              width={600}
+              height={800}
+              alt="iklan3"
+            />
           </Carousel>
         </div>
         <section
           id="home"
-          className="flex justify-between border-b-[5px] border-transparent hue-rotate-180 border-spacing-5"
+          className="flex justify-between border-b-[5px] border-transparent  border-spacing-5"
         >
           <div className="flex-row px-28 py-20 space-y-10 bg-white">
             <div className="sm:text-4xl lg:text-6xl sm:pt-24  lg:pt-28">
@@ -199,37 +187,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <table className="table-auto">
-          <thead>
-            <tr>
-              <th>
-                <Image
-                  src={"/gambar/iklan 1.png"}
-                  width={600}
-                  height={300}
-                  alt="iklan"
-                ></Image>
-              </th>
-              <th>
-                <Image
-                  src={"/gambar/iklan2.png"}
-                  width={600}
-                  height={300}
-                  alt="iklan"
-                ></Image>
-              </th>
-              <th>
-                <Image
-                  src={"/gambar/iklan 3.png"}
-                  width={600}
-                  height={300}
-                  alt="iklan"
-                ></Image>
-              </th>
-            </tr>
-          </thead>
-        </table>
 
         {/* Hero  */}
       </Layout>
