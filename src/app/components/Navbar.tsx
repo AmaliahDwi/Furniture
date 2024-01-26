@@ -9,7 +9,7 @@ function Navbar() {
     <>
       <nav>
         <InsideNavbar scrolled={scrolled} />
-        <div className={`h-20 transition-all duration-300 ease-in-out`} />
+        <div className={`h-[54px] transition-all duration-300 ease-in-out`} />
         {}
       </nav>
     </>

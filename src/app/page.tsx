@@ -1,37 +1,50 @@
 import Image from "next/image";
 import Layout from "./components/Layout";
-import { Carousel } from "flowbite-react";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Hero from "./components/page/Hero";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 export default function Home() {
-  const carouselProps: any = {
-    showArrows: true,
-    autoPlay: true,
-    interval: 3000,
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
   };
+
   return (
     <main className="bg-white">
       <Layout>
-        {/* <div className="h-96 justify-">
+        <div>
           <Carousel
-            {...carouselProps}
-            dynamicHeight={false}
-            emulateTouch={true}
+            swipeable={false}
+            draggable={false}
+            showDots={true}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={true}
+            autoPlay={this.props.deviceType !== "mobile" ? true : false}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            deviceType={this.props.deviceType}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px"
           >
-            {[1, 2, 3].map((index) => (
-              <div key={index} className="cen">
-                <Image
-                  src={`/gambar/iklan ${index}.png`}
-                  width={600}
-                  height={300}
-                  alt={`iklan ${index}`}
-                />
-              </div>
-            ))}
-          </Carousel>
-        </div> */}
-        <div className="h-80 ">
-          <Carousel>
             <Image
               src="/gambar/iklan 1.png"
               width={600}
@@ -52,6 +65,57 @@ export default function Home() {
             />
           </Carousel>
         </div>
+
+        <Hero />
+
+        <div className="p-16">
+          <div className="grid grid-flow-col justify-items-center">
+            <div className="pr-10">
+              <Image
+                src="/gambar/minimalistdiningroom5.jpg"
+                width={200}
+                height={100}
+                alt="mdr1"
+                className="rounded-[20px] shadow shadow-slate-600"
+              ></Image>
+            </div>
+            <div className="pr-10">
+              <Image
+                src="/gambar/minimalistdiningroom8.jpg"
+                width={200}
+                height={100}
+                alt="mdr2"
+                className="rounded-[20px] shadow shadow-gray-800"
+              ></Image>
+            </div>
+            <div className="pr-10">
+              <Image
+                src="/gambar/minimalistdiningroom9.jpg"
+                width={200}
+                height={100}
+                alt="mdr3"
+                className="rounded-[20px] shadow shadow-gray-800"
+              ></Image>
+            </div>
+            <div className="pr-10">
+              <Image
+                src="/gambar/diningroom2.jpg"
+                width={200}
+                height={100}
+                alt="mdr4"
+                className="rounded-[20px] shadow shadow-gray-800"
+              ></Image>
+            </div>
+            <Image
+              src="/gambar/minimalistdiningroom1.jpg"
+              width={200}
+              height={100}
+              alt="mdr5"
+              className="rounded-[20px] shadow shadow-gray-800"
+            ></Image>
+          </div>
+        </div>
+
         <section
           id="home"
           className="flex justify-between border-b-[5px] border-transparent  border-spacing-5"
