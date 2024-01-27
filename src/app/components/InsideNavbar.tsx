@@ -58,22 +58,22 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                       </span>
                     </button>
                     {isOpen && (
-                      <div className="bg-[#875A38] w-[120px] absolute text-md md:text-lg text-gray-100 top-10  p-2">
+                      <div className="bg-[#0a1015] bg-opacity-70 w-[120px] absolute text-md md:text-lg text-gray-100 top-10  p-2">
                         <div className="">
                           <Link
-                            className="flex flex-row hover:bg-[#CE9970] cursor-pointer p-1"
+                            className="flex flex-row hover:bg-black/50 cursor-pointer p-1"
                             href="#"
                           >
                             AKSESORIS
                           </Link>
                           <Link
-                            className="flex flex-row hover:bg-[#CE9970] cursor-pointe p-1"
+                            className="flex flex-row hover:bg-black/50 cursor-pointe p-1"
                             href="#"
                           >
                             DESAIN INTERIOR
                           </Link>
                           <Link
-                            className="flex flex-row hover:bg-[#CE9970] cursor-pointer p-1"
+                            className="flex flex-row hover:bg-black/50 cursor-pointer p-1"
                             href="#"
                           >
                             PROPERTI

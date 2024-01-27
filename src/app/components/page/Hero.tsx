@@ -3,16 +3,21 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="px-40 relative">
-      <div className="absolute top-3 left-0 w-full h-full z-[1] bg-black/50"></div>
+    <div className="relative">
+      <div className="absolute top-{11px} left-0 w-full h-full z-[1] bg-black/50">
+        <div className="text-6xl justify-between text-center">
+          <h3>Design Your Home</h3>
+          <h3>with the Expert</h3>
+        </div>
+      </div>
       <Image
         src="/gambar/room2.jpeg"
-        width={600}
+        width={800}
         height={200}
         // layout="fill"
         objectFit="cover"
         alt="room"
-        className="w-full rounded-[20px] "
+        className="w-full h-full"
       ></Image>
     </div>
   );
