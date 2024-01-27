@@ -4,11 +4,7 @@ import React from 'react'
 import Carousel from 'react-multi-carousel'
 import "react-multi-carousel/lib/styles.css";
 
-interface BannerProps {
-  deviceType: string;
-}
-
-function Banner({ deviceType }: BannerProps) {
+function Banner() {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
