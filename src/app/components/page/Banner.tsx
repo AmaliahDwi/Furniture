@@ -4,7 +4,11 @@ import React from 'react'
 import Carousel from 'react-multi-carousel'
 import "react-multi-carousel/lib/styles.css";
 
-function Banner() {
+interface BannerProps {
+  deviceType: string;
+}
+
+function Banner({ deviceType }: BannerProps) {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -25,19 +29,20 @@ function Banner() {
   };
   return (
     <Carousel
-              swipeable={false}
-              draggable={false}
-              showDots={true}
-              responsive={responsive}
-              ssr={true}
-              infinite={true}
-              autoPlaySpeed={3000} // Increase this for slower transitions
-              keyBoardControl={true}
-              transitionDuration={1000} // Increase this for a slower transition
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={['tablet', 'mobile']}
-              dotListClass="custom-dot-list-style"
-              itemClass="p-1 pb-8"
+      swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={3000} // Increase this for slower transitions
+          keyBoardControl={true}
+          transitionDuration={1000} // Increase this for a slower transition
+          containerClass="carousel-container"
+          removeArrowOnDeviceType={['tablet', 'mobile']}
+          dotListClass="custom-dot-list-style"
+          itemClass="p-1 pb-8"
             >
               <Image
                 src={'/gambar/iklan1.png'}

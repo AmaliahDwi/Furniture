@@ -4,12 +4,13 @@ import Hero from "./components/page/Hero";
 import Banner from "./components/page/Banner";
 
 export default function Home() {
+   const deviceType = 'desktop';
 
   return (
     <main className="bg-white">
       <Layout>
 
-      <Banner/>
+        <Banner deviceType={deviceType}/>
 
         <Hero />
 
