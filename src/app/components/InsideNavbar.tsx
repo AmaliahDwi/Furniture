@@ -19,7 +19,7 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
         } w-full bg-[#0a1015] bg-opacity-70`}
       >
         <div
-          className={`flex justify-between py-[5px] items-center ${
+          className={`flex justify-between py-[6px] items-center ${
             fixed ? " lg:px-5 sm:px-5 px-3" : "lg:px-0"
           }`}
         >
@@ -58,7 +58,7 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                       </span>
                     </button>
                     {isOpen && (
-                      <div className="bg-[#0a1015] bg-opacity-70 w-[120px] absolute text-md md:text-lg text-gray-100 top-10  p-2">
+                      <div className="bg-white/90 w-[120px] absolute text-md md:text-lg text-black top-10  p-2">
                         <div className="">
                           <Link
                             className="flex flex-row hover:bg-black/50 cursor-pointer p-1"
@@ -92,7 +92,7 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                 type="search"
                 id="search-box"
                 placeholder="Search..."
-                className="py-2 w-72 rounded-full text-base focus:outline-none"
+                className="px-4 py-2 w-80 rounded-full text-base focus:outline-none"
               />
               <button className="absolute right-1 top-1/2 -translate-y-1/2 p-4 rounded-full">
                 <IoIosSearch />

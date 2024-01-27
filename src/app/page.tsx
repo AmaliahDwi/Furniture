@@ -4,13 +4,31 @@ import Hero from "./components/page/Hero";
 
 export default function Home() {
   return (
-    <main className="bg-white">
+    <main className="bg-white/50">
       <Layout>
-        <div></div>
-
         <Hero />
 
-        <div className="p-16">
+        <div className="p-32">
+          <div className="grid grid-cols-3 justify-items-center">
+            <div className="text-2xl text-center">
+              <div className="mb-1">Lorem ipsum dolor</div>
+              <div className="mb-1">sit amet consectetur</div>
+              <div>Labore quia</div>
+            </div>
+            <div className="text-4xl text-center">
+              <div className="mb-2">We Work to an</div>
+              <div className="mb-2">Extremely High Standart</div>
+              <div>of Customer Satisfaction</div>
+            </div>
+            <div className="text-2xl text-center">
+              <div className="mb-1">Lorem ipsum dolor</div>
+              <div className="mb-1">sit amet consectetur</div>
+              <div>adipisicing elit</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-16 pb-16">
           <div className="grid grid-flow-col justify-items-center">
             <div className="pr-10">
               <Image
