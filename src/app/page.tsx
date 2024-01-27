@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Layout from "./components/Layout";
 import Hero from "./components/page/Hero";
+import Banner from "./components/page/Banner";
 
 export default function Home() {
 
   return (
     <main className="bg-white">
       <Layout>
-        <div>
-        </div>
+
+      <Banner/>
 
         <Hero />
 
@@ -21,7 +22,7 @@ export default function Home() {
                 height={100}
                 alt="mdr1"
                 className="rounded-[20px] shadow shadow-slate-600"
-              ></Image>
+                ></Image>
             </div>
             <div className="pr-10">
               <Image
@@ -30,7 +31,7 @@ export default function Home() {
                 height={100}
                 alt="mdr2"
                 className="rounded-[20px] shadow shadow-gray-800"
-              ></Image>
+                ></Image>
             </div>
             <div className="pr-10">
               <Image
@@ -39,7 +40,7 @@ export default function Home() {
                 height={100}
                 alt="mdr3"
                 className="rounded-[20px] shadow shadow-gray-800"
-              ></Image>
+                ></Image>
             </div>
             <div className="pr-10">
               <Image
@@ -48,7 +49,7 @@ export default function Home() {
                 height={100}
                 alt="mdr4"
                 className="rounded-[20px] shadow shadow-gray-800"
-              ></Image>
+                ></Image>
             </div>
             <Image
               src="/gambar/minimalistdiningroom1.jpg"
@@ -56,14 +57,14 @@ export default function Home() {
               height={100}
               alt="mdr5"
               className="rounded-[20px] shadow shadow-gray-800"
-            ></Image>
+              ></Image>
           </div>
         </div>
 
         <section
           id="home"
           className="flex justify-between border-b-[5px] border-transparent  border-spacing-5"
-        >
+          >
           <div className="flex-row px-28 py-20 space-y-10 bg-white">
             <div className="sm:text-4xl lg:text-6xl sm:pt-24  lg:pt-28">
               <div className="flex items-center">Heavy</div>
