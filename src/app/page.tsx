@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <main className="bg-white/50">
       <Layout>
+        <Banner />
+
         <Hero />
 
         <div className="p-32">

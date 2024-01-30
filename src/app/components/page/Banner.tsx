@@ -31,14 +31,13 @@ function Banner() {
       responsive={responsive}
       ssr={true}
       infinite={true}
-      autoPlay={true}
       autoPlaySpeed={3000} // Increase this for slower transitions
       keyBoardControl={true}
       transitionDuration={1000} // Increase this for a slower transition
       containerClass="carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="custom-dot-list-style"
-      itemClass="p-1 pb-8 pt-8"
+      itemClass="p-1 pb-8"
     >
       <Image
         src={"/gambar/iklan1.png"}
