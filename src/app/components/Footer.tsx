@@ -11,7 +11,7 @@ function Footer({ fullscreen }: any) {
           <div className="text-gray-500 text-lg font-medium text-center mb-4">
             Metode Pembayaran
           </div>
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-center">
+          <div className="grid grid-cols-3 gap-x-20 gap-y-10 justify-items-center items-center">
             <Image
               src={"/gambar/visa.png"}
               width={30}
@@ -61,7 +61,7 @@ function Footer({ fullscreen }: any) {
           <div className="text-gray-500 text-lg font-medium text-center mb-4">
             Jasa Pengiriman
           </div>
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-center">
+          <div className="grid grid-cols-3 gap-x-20 gap-y-10 justify-items-center items-center">
             <Image
               src={"/gambar/jne.png"}
               width={45}
@@ -105,7 +105,7 @@ function Footer({ fullscreen }: any) {
           <div className="text-gray-500 text-lg font-medium text-center mb-4">
             Metode Pembayaran
           </div>
-          <div className="grid grid-cols-3 gap-2 justify-items-center items-center">
+          <div className="grid grid-cols-3 gap-x-20 gap-y-10 justify-items-center items-center">
             <Image
               src={"/gambar/visa.png"}
               width={30}
@@ -153,13 +153,13 @@ function Footer({ fullscreen }: any) {
         </div>
       </div>
 
-      <div className="lg:text-2xl text-xl text-center text-amber-950">
+      <div className="lg:text-2xl text-xl text-center text-slate-800">
         Find us in social media
       </div>
       <div className="flex gap-4 justify-center p-4">
-        <AiFillInstagram className="w-6 h-6  text-amber-950" />
-        <FaFacebookF className="w-6 h-6 text-amber-950" />
-        <FaTwitter className="w-6 h-6 text-amber-950" />
+        <AiFillInstagram className="w-6 h-6  text-zinc-900" />
+        <FaFacebookF className="w-6 h-6 text-zinc-900" />
+        <FaTwitter className="w-6 h-6 text-zinc-900" />
       </div>
       <div className="text-gray-700 text-center sm:text-sm lg:text-base">
         &copy; 2024 Abani Furniture all rights reserved

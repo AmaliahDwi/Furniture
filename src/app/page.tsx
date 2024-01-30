@@ -41,7 +41,7 @@ export default function Home() {
             </div>
             <div className="pr-10">
               <Image
-                src="/gambar/minimalistdiningroom8.jpg"
+                src="/gambar/badroom.jpg"
                 width={200}
                 height={100}
                 alt="mdr2"
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
             <div className="pr-10">
               <Image
-                src="/gambar/diningroom2.jpg"
+                src="/gambar/family room.jpg"
                 width={200}
                 height={100}
                 alt="mdr4"
@@ -76,11 +76,11 @@ export default function Home() {
           </div>
         </div>
 
-        <section
+        {/* <section
           id="home"
           className="flex justify-between border-b-[5px] border-transparent  border-spacing-5"
         >
-          <div className="flex-row px-28 py-20 space-y-10 bg-white">
+          <div className="flex-row px-28 py-20 space-y-10 bg-white/50">
             <div className="sm:text-4xl lg:text-6xl sm:pt-24  lg:pt-28">
               <div className="flex items-center">Heavy</div>
               <div className="flex items-center">Pendant</div>
@@ -181,7 +181,7 @@ export default function Home() {
               tempora!
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section
           id="about"

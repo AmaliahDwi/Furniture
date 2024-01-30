@@ -27,7 +27,7 @@ function Hero() {
     <div className="relative">
       <div className="absolute top-{5px} left-0 w-full h-full z-[1] bg-black/50">
         <div className="grid grid-cols-1 place-items-center w-full h-full">
-          <div className="text-6xl font-bold text-gray-100 whitespace-pre">
+          <div className="sm:text-4xl md:text-6xl font-bold text-gray-100 whitespace-pre">
             <div className="mb-5">Design Your Home</div>
             <div> with the Expert</div>
           </div>
