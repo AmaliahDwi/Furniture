@@ -16,11 +16,11 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
             ? "fixed left-0 z-[9999] shadow transition-all duration-500 ease-in-out border-none pt-4 text-sm"
             : ""
         } ${
-          fixed ? (scrolled ? "shadow -top-4" : "shadow-none  -top-6") : ""
+          fixed ? (scrolled ? "shadow -top-4" : "shadow-none  -top-[12px]") : ""
         } w-full bg-[#0a1015] bg-opacity-70`}
       >
         <div
-          className={`flex justify-between py-[6px] items-center ${
+          className={`flex justify-between py-[3.5px] lg:py-[3px] items-center ${
             fixed ? " lg:px-5 sm:px-5 px-3" : "lg:px-0"
           }`}
         >
@@ -32,13 +32,13 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                   HOME
                 </a>
                 <a href="#chair" className="text-white hover:text-orange-300">
-                  CHAIR
+                  AKSESORIS
                 </a>
                 <a href="#lamp" className="text-white hover:text-orange-300">
-                  LAMP
+                  DESIGN INTERIOR
                 </a>
                 <a href="#table" className="text-white hover:text-orange-300">
-                  TABLE
+                  PROPERTY
                 </a>
                 <a
                   href="#about"
@@ -65,19 +65,19 @@ function InsideNavbar({ fixed = true, scrolled }: any) {
                             className="flex flex-row hover:bg-black/50 cursor-pointer p-1"
                             href="#"
                           >
-                            AKSESORIS
+                            CHAIR
                           </Link>
                           <Link
                             className="flex flex-row hover:bg-black/50 cursor-pointe p-1"
                             href="#"
                           >
-                            DESAIN INTERIOR
+                            LAMP
                           </Link>
                           <Link
                             className="flex flex-row hover:bg-black/50 cursor-pointer p-1"
                             href="#"
                           >
-                            PROPERTI
+                            TABLE
                           </Link>
                         </div>
                       </div>

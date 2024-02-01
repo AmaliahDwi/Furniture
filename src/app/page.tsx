@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section
+        {/* <section
           id="about"
           className="flex justify-between border-b-[5px] border-white"
         >
@@ -213,7 +213,7 @@ export default function Home() {
               every piece tells a unique story.
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Hero  */}
       </Layout>
